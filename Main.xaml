@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1218.4,3257.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1218.4,3448" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -95,19 +95,19 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="651.2,3192.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="651.2,3383.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Data Entry | Catalytic" sap:VirtualizedContainerService.HintSize="588.8,3080.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="99a13691-05e2-48e6-918c-a3e38abfccb9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Data Entry | Catalytic" sap:VirtualizedContainerService.HintSize="588.8,3271.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="99a13691-05e2-48e6-918c-a3e38abfccb9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,2864" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,3054.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="confirmationMessage" />
             </Sequence.Variables>
@@ -196,16 +196,27 @@
                 <uix:TargetAnchorable BrowserURL="https://boschtraining.pushbot.com/form/showcase" DesignTimeRectangle="624, 535, 1330, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Success!'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='jss174' aaname='Success!' check:innerText='Success!' /&gt;" Guid="1d91d3b6-33e2-4543-9ab8-a6921b295e52" ImageBase64="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" InformativeScreenshot="607ae0f911290577479b2563066e7b25.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Entry | Catalytic' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
               </uix:NCheckState.Target>
             </uix:NCheckState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Send Message.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="492.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Send Message.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="subject">
-                  <Literal x:TypeArguments="x:String">Result from form</Literal>
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="body">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="confirmationMessage" />
-                </InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-            </ui:InvokeWorkflowFile>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="492.8,304" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Send Message.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Send Message.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="subject">
+                        <Literal x:TypeArguments="x:String">Result from form</Literal>
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="body">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="confirmationMessage" />
+                      </InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
